@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="shortcut icon" href="src/img/435639.png" type="image/x-icon">
+    <link rel="stylesheet" href="src/style.css">
+</head>
+<body>
+    <h2>Calculadora</h2>
+    <main>
+        <div class="result" ><p id="resultado"></p></div>
+        <div class="numbers">
+            <div class="line">
+                <button onclick="clean()" id="zerar">AC</button>
+                <button onclick="insere('/')" id="divisao" class="color-blue">/</button>
+            </div>
+            <div class="line">
+                <button onclick="insere('7')">7</button>
+                <button onclick="insere('8')">8</button>
+                <button onclick="insere('9')">9</button>
+                <button onclick="insere('*')" class="color-blue">*</button>
+            </div>
+            <div class="line">
+                <button onclick="insere('4')">4</button>
+                <button onclick="insere('5')">5</button>
+                <button onclick="insere('6')">6</button>
+                <button onclick="insere('-')" class="color-blue">-</button>
+            </div>
+            <div class="line">
+                <button onclick="insere('1')">1</button>
+                <button onclick="insere('2')">2</button>
+                <button onclick="insere('3')">3</button>
+                <button onclick="insere('+')" class="color-blue">+</button>
+            </div>
+            <div class="line">
+                <button onclick="insere('0')" id="zero">0</button>
+                <button onclick="insere('.')">.</button>
+                <button id="igual" onclick="calcular()" class="color-blue">=</button>
+            </div>
+        </div>
+    </main>
+    <script src="src/script.js"></script>
+</body>
+</html>
